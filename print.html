@@ -238,7 +238,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 <p>Before we shut down the interpretor, let's say you wanted to verify that the print function works as expected. Type in the following into your console (Don't leave anything out, parentheses and quotes are important!).</p>
 <pre><code class="language-python">print(&quot;Hello, World!&quot;)
 </code></pre>
-<p>If you get silence as your output and are using NVDA, press NVDA+5 to turn on the reporting of dynamic content changes and try again. You should now get get the classic introduction to programming message. If you get an error, make sure that all the quotes and parentheses are present and that you didn't accidentally misspell print. If it still doesn't work... well, I hope you had fun, because the world is about to end and Python refuses to speak do to the impending apocalypse.<br />
+<p>If you get silence as your output and are using NVDA, press NVDA+5 to turn on reporting of dynamic content changes and try again. If you are using Jaws, reviewing the screen is a matter of scrolling with your Jaws cursor (JAWS+RightBracket). You should now get the classic introduction to programming message. If you get an error, make sure that all the quotes and parentheses are present and that you didn't accidentally misspell print. If it still doesn't work... well, I hope you had fun, because the world is about to end and Python refuses to speak do to the impending apocalypse.<br />
 Regardless of the outcome, to close the interpreter, you can simply type</p>
 <pre><code class="language-python">exit()
 </code></pre>
@@ -264,9 +264,25 @@ Regardless of the outcome, to close the interpreter, you can simply type</p>
 <li>If you are using the laptop layout, use NVDA+PageUp and NVDA+PageDown until you hear &quot;Object review&quot;. After object review has been selected, use NVDA+Up and NVDA+Down arrow keys to review the command prompt screen. Your cursor typically starts at the bottom and thus you may need to scroll upwards to see the error and the traceback.</li>
 <li>If you are using the desktop layout, use NVDA+Numpad7 and NVDA+Numpad1 until you hear &quot;Object review&quot;. After object review has been selected, use Numpad7 and Numpad9 to review the command prompt screen. Your cursor typically starts at the bottom and thus you may need to scroll upwards to see the error and the traceback.</li>
 </ul>
+<h4><a class="header" href="#using-jaws" id="using-jaws">Using Jaws</a></h4>
+<p>You can use the standard Jaws cursor (JAWS+RightBracket) to review the last couple of messages. (Thanks <a href="https://forum.audiogames.net/user/16064/">Defender</a> for supplying this tip)</p>
 <h2><a class="header" href="#miscellaneous-settings" id="miscellaneous-settings">Miscellaneous Settings</a></h2>
 <h3><a class="header" href="#indentation" id="indentation">Indentation</a></h3>
-<p>It is very common to see complaints about the necessity to keep track of tabs and spaces. Fortunately, the NVDA screen reader provides a solution to this issue. To turn on indentation reporting, go into your NVDA preferences, click on settings, scroll down to document formatting, and press Alt+I. This will bring you to a combo box where you can choose how NVDA notifies you of indention (speech, tones, or both). After selecting your desired method, scroll down and press apply before clicking okay to close the settings dialog. To verify that indentation reports work, read through the following piece of Python code.</p>
+<p>It is very common to see complaints about the necessity to keep track of tabs and spaces. Fortunately, both  NVDA and Jaws screen readers provide a solution to this issue.</p>
+<h4><a class="header" href="#using-nvda-1" id="using-nvda-1">Using NVDA</a></h4>
+<p>To turn on indentation reporting, go into your NVDA preferences, click on settings, scroll down to document formatting, and press Alt+I. This will bring you to a combo box where you can choose how NVDA notifies you of indention (speech, tones, or both). After selecting your desired method, scroll down and press apply before clicking okay to close the settings dialog. </p>
+<h4><a class="header" href="#using-jaws-thanks-a-hrefhttpsforumaudiogamesnetuser16064defendera-for-supplying-this-tip" id="using-jaws-thanks-a-hrefhttpsforumaudiogamesnetuser16064defendera-for-supplying-this-tip">Using Jaws (Thanks <a href="https://forum.audiogames.net/user/16064/">Defender</a> for supplying this tip)</a></h4>
+<h5><a class="header" href="#method-1" id="method-1">Method 1</a></h5>
+<ul>
+<li>Go to JAWS settings center (JAWS Key plus 6) and either set it for the current application only or use control shift D to make it system wide.</li>
+<li>Hit shift tab and Type <strong>&quot;indent&quot;</strong> into the search box.  The only option which comes up is the one you want.
+You may also want to go into the settings center search box and type &quot;speech and sound&quot; for the speech and sounds category.  There you can change the default scheme by pressing space until it matches the number of spaces that your code editor considers to be a tab if it doesn't seem to be reporting properly.</li>
+</ul>
+<h5><a class="header" href="#method-2" id="method-2">Method 2</a></h5>
+<p>When within the window of your editor, use JAWS Key plus V, shift tab and type &quot;indent&quot; again, then set the option to indicate.
+You may also want to go into the settings center search box and type &quot;speech and sound&quot; for the speech and sounds category.  There you can change the default scheme by pressing space until it matches the number of spaces that your code editor considers to be a tab if it doesn't seem to be reporting properly.</p>
+<h3><a class="header" href="#testing-indentation" id="testing-indentation">Testing Indentation</a></h3>
+<p>To verify that indentation reports work, read through the following piece of Python code.</p>
 <pre><code class="language-python">def main():
     print(&quot;I will now count to 10!&quot;)
     for i in range(1, 11):
@@ -276,7 +292,7 @@ Regardless of the outcome, to close the interpreter, you can simply type</p>
 main()
 </code></pre>
 <h3><a class="header" href="#symbol-reports" id="symbol-reports">Symbol reports</a></h3>
-<p>It is common to need to find a mistake in regarding unmatched parentheses within Python code. NVDA provides a variety of symbol reporting options to assist in this endeavor. You can toggle through said choices with NVDA+P. I personally find the most option to be the most helpful (I think that reading out commas and periods is unnecessary), but you may differ in that regard. To that end, the code below can be used as a testing method for the various settings</p>
+<p>It is common to need to find a mistake in regarding unmatched parentheses within Python code. NVDA and Jaws provide a variety of symbol reporting options to assist in this endeavor. For NVDA, you can toggle through said choices with NVDA+P. For Jaws, you need to navigate to the settings center and search for customize punctuation (Thanks <a href="https://forum.audiogames.net/user/16064/">Defender</a> for supplying this tip). I personally find the most option to be the most helpful (I think that reading out commas and periods is unnecessary), but you may differ in that regard. To that end, the code below can be used as a testing method for the various settings</p>
 <pre><code class="language-python">def print_3d_list():
     matrix = [[[k for k in range(10)] for j in range(10)] for i in range(10)]
     for i in range(len(matrix)):
@@ -289,6 +305,8 @@ print_3d_list()
 </code></pre>
 <h2><a class="header" href="#thats-it" id="thats-it">That's It!</a></h2>
 <p>Now that you have an editor and know how to use Python from the commandline, you can proceed to the next section where I have compiled a list of tutorials for you to get started programming. I certainly don't recommend going through all of them at once, better to stick to one method of learning unless you get stuck, but if something does not make sense, feel free to try something else or switch to something new. Just because you chose a specific book or course does not mean that you have to be purely devoted to its methods of teaching. If an explanation seems confusing, chances are that there is a better one out there and you just need to look for it</p>
+<h2><a class="header" href="#attribution" id="attribution">Attribution</a></h2>
+<p>This section would not be complete without input from the community. In particular, <a href="https://forum.audiogames.net/user/16064/">Defender</a> provided instructions regarding Jaws commands for indentation, symbol reporting, and reviewing commandline output. If the instructions here are unclear, his original replies are located in <a href="https://forum.audiogames.net/topic/38468/updating-my-python-guides/">this</a> thread, posts 3 and 5.</p>
 <h2><a class="header" href="#programming-tutorials" id="programming-tutorials">Programming Tutorials</a></h2>
 <p>Below are some resources for getting started with Python programming.</p>
 <ul>
@@ -324,6 +342,21 @@ print_3d_list()
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
