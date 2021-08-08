@@ -155,7 +155,7 @@
 <h3 id="pyage"><a class="header" href="#pyage">PyAge</a></h3>
 <p>PyAge, found <a href="https://github.com/Timtam/pyAGE">here</a> aims to provide as little as possible with the goal of being agnostic. It offers a state stack, a skeleton of a menu, text input, and the ability to customize almost anything one wishes. By default, PyAge uses <a href="https://www.pygame.org/">Pygame</a> for handling events, <a href="https://github.com/camlorn/synthizer">Synthizer</a> for sound output, and <a href="https://github.com/pauliyobo/cytolk">Cytolk</a> for providing speech. Its discussion thread can be found <a href="https://forum.audiogames.net/topic/38941/pyage-yet-another-python-audio-game-engine/">here</a>, but unfortunately there are no examples within the repository or the linked topic. However, the code is commented and there is a basic explanation of the API usage. Unlike Lucia, PyAge does offer the concept of framerate as well as a screen stack. It also provides the ability to schedule tasks and bind functions to keys, both on a state-by-state basis and globally (regardless of what is currently happening inside the game). It should be noted that the framework heavily relies on the <a href="https://en.wikipedia.org/wiki/Singleton_pattern">Singleton pattern</a>.</p>
 <h3 id="pygame"><a class="header" href="#pygame">Pygame</a></h3>
-<p>Pygame is a framework designed for creating games using <a href="https://wiki.libsdl.org/">Simple Direct Media Layer</a> (SDL) under the hood. Though not coming with any tools specifically aimed at audio game creation, it allows for the greatest level of customization. There are no official discussion threads, but the documentation contains numerous code snippets and Google can provide larger samples of games made with Pygame. Also do note that you will have to choose sound and speech backends as Pygame does not offer the ability to send messages to a screen reader and its sound support is minimal at best.</p>
+<p>Pygame, found <a href="https://www.pygame.org/">here</a> is a framework designed for creating games using <a href="https://wiki.libsdl.org/">Simple Direct Media Layer</a> (SDL) under the hood. Though not coming with any tools specifically aimed at audio game creation, it allows for the greatest level of customization. There are no official discussion threads, but the documentation contains numerous code snippets and Google can provide larger samples of games made with Pygame. Also do note that you will have to choose sound and speech backends as Pygame does not offer the ability to send messages to a screen reader and its sound support is minimal at best.</p>
 <h3 id="pyglet"><a class="header" href="#pyglet">Pyglet</a></h3>
 <p>Pyglet is one of Pygame's competitors. Found <a href="http://pyglet.org/">here</a>, it encourages the usage of <a href="https://realpython.com/primer-on-python-decorators/">decorators</a> with the ability to inherit from classes at one's discretion. As with Pygame, Pyglet does not offer specialized tools aimed at audio game creation. However, it does offer a sound backend, <a href="https://openal.org/">OpenAL</a>, which supports binaural audio. pyglet also comes with its own control loop and scheduling functions, automatically keeping track of the provided framerate. There are no official discussion threads, but the documentation contains numerous code snippets and Google can provide larger samples of games made with Pyglet. Do note that you still need to choose a speech and possibly a sound backend if OpenAL is not what you desire when using the framework.</p>
 <h3 id="pysdl2"><a class="header" href="#pysdl2">PySDL2</a></h3>
@@ -186,20 +186,6 @@
 
         </div>
 
-                <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
         
         
