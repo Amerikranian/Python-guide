@@ -4,38 +4,27 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Editors, Scripts, and Miscellaneous Screen Reader Configuration - Python Guide for Visually Impaired</title>
-        
-        
-
+                
 
         <!-- Custom HTML head -->
         
-
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
-        <link rel="icon" href="favicon.svg">
-        
-        
-        <link rel="shortcut icon" href="favicon.png">
-        
-        <link rel="stylesheet" href="css/variables.css">
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
         
-        <link rel="stylesheet" href="css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
@@ -43,9 +32,7 @@
 
         <!-- Custom theme stylesheets -->
         
-
-        
-    </head>
+            </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
@@ -95,8 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome</a></li><li class="chapter-item expanded "><a href="downloading.html"><strong aria-hidden="true">2.</strong> Downloading and Installing Python</a></li><li class="chapter-item expanded "><a href="after_installation.html" class="active"><strong aria-hidden="true">3.</strong> Editors, Scripts, and Miscellaneous Screen Reader Configuration</a></li><li class="chapter-item expanded "><a href="tutorials.html"><strong aria-hidden="true">4.</strong> Programming Tutorials</a></li></ol>
-            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome</a></li><li class="chapter-item expanded "><a href="downloading.html"><strong aria-hidden="true">2.</strong> Downloading and Installing Python</a></li><li class="chapter-item expanded "><a href="after_installation.html" class="active"><strong aria-hidden="true">3.</strong> Editors, Scripts, and Miscellaneous Screen Reader Configuration</a></li><li class="chapter-item expanded "><a href="tutorials.html"><strong aria-hidden="true">4.</strong> Programming Tutorials</a></li><li class="chapter-item expanded "><a href="game_frameworks.html"><strong aria-hidden="true">5.</strong> Game Frameworks</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -120,29 +106,24 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
-                    </div>
+                                            </div>
 
                     <h1 class="menu-title">Python Guide for Visually Impaired</h1>
 
                     <div class="right-buttons">
-                        
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
+                                                                        
                     </div>
                 </div>
 
-                
-                <div id="search-wrapper" class="hidden">
+                                <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -151,7 +132,6 @@
                     </div>
                 </div>
                 
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -163,9 +143,9 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2><a class="header" href="#editors-scripts-and-miscellaneous-screen-reader-configuration" id="editors-scripts-and-miscellaneous-screen-reader-configuration">Editors, Scripts, and Miscellaneous Screen Reader Configuration</a></h2>
+                        <h2 id="editors-scripts-and-miscellaneous-screen-reader-configuration"><a class="header" href="#editors-scripts-and-miscellaneous-screen-reader-configuration">Editors, Scripts, and Miscellaneous Screen Reader Configuration</a></h2>
 <p>While you can certainly write scripts in a notepad (I have for a year or so), there are a multitude of editors available for working with Python. Said tools allow for features like autoindentation, autocompletion, and can go as far as supporting type annotations and providing helpful hints as you are calling functions. If this sounds like gibberish, don't worry. You can always switch to something new later. Unfortunately, do to the extensive amount of options, this guide will only list the available tools and provide comments as necessary rather than give details on installation and setup for each product.</p>
-<h3><a class="header" href="#editor-and-ide-listing" id="editor-and-ide-listing">Editor and IDE listing</a></h3>
+<h3 id="editor-and-ide-listing"><a class="header" href="#editor-and-ide-listing">Editor and IDE listing</a></h3>
 <ul>
 <li><a href="https://notepad2.en.softonic.com/">Notepad II</a></li>
 <li><a href="https://notepad-plus-plus.org/">Notepad ++</a>, provides autocompletion and autoindentation while converting tabs into four spaces (adjustable). A quick search for <strong>&quot;Python extension for notepad ++&quot;</strong> yielded <a href="http://npppythonscript.sourceforge.net/download.shtml">this</a> link for completion of standard Python library functions. See <a href="https://forum.audiogames.net/topic/33310/run-any-programming-language-on-notepad/">this link</a> on how to run Python using Notepad ++ without needing to resort to commandline.</li>
@@ -174,9 +154,9 @@
 <li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a>, may require <a href="https://www.java.com/en/">Java</a> and <a href="https://docs.oracle.com/en/java/javase/12/access/enabling-and-testing-java-access-bridge.html">Java Access Bridge</a>. Be sure that the version of Java you install matches that of your system, I.e, 64-bit installation for a 64-bit machine. Upon launch, PyCharm should prompt you to turn on screen reader mode if you are running any assistive technology, I.e, NVDA or Jaws.</li>
 <li><a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio Community</a>, big and clunky at times and does not guarantee accessibility of its profiler and debugger, but works well when it does. Note that you will have to install this and the C++ Desktop Development extension should you choose to <a href="https://cython.org/">Cythonize</a> your code. Also note that just like with VSCode, you will have to install a seperate extension to enable Python support, though this time the said package is in the installer itself. If you experience lag with NVDA while using the IDE, try turning on <strong>&quot;Enable selective registration for UI Automation events and property changes&quot;</strong> in the advanced section of your NVDA preferences. It may or may not help.</li>
 </ul>
-<h2><a class="header" href="#running-code-from-the-commandline" id="running-code-from-the-commandline">Running Code From the Commandline</a></h2>
+<h2 id="running-code-from-the-commandline"><a class="header" href="#running-code-from-the-commandline">Running Code From the Commandline</a></h2>
 <p>Regardless of what option you chose, knowing how to interface with the Python interpreter is a valuable skill. If you want to test something out, whether a particular standard library module has a specific function, for instance, the interpreter can be of grate help. If you are not sure of what a commandline is, a quick skim through <a href="https://www.techopedia.com/definition/3336/command-line">this article</a> should clear up the mystery.</p>
-<h3><a class="header" href="#great-how-do-i-open-and-use-this-thing" id="great-how-do-i-open-and-use-this-thing">Great, How Do I Open and Use This Thing?</a></h3>
+<h3 id="great-how-do-i-open-and-use-this-thing"><a class="header" href="#great-how-do-i-open-and-use-this-thing">Great, How Do I Open and Use This Thing?</a></h3>
 <p>To open up your commandline, press windows+r to bring up the run dialog, type cmd, and hit enter. You should now see something like the following:</p>
 <pre><code class="language-batch">Microsoft Windows [Version 10.0.19041.685]
 (c) 2020 Microsoft Corporation. All rights reserved.
@@ -185,17 +165,17 @@ C:\Users\yourUsername&gt;
 </code></pre>
 <p>You are now in the command prompt and the system is waiting for your input. If you type <strong>&quot;dir&quot;</strong> without the quotes, you will get the listing of all the files and folders within your directory. Typing a filename by itself, such as some_file.txt, will cause said file to open within its associated app, Notepad ++ in my case. Typing <strong>&quot;cd directory_name&quot;</strong> will cause you to move to the desired directory. Typing <strong>&quot;cd ..&quot;</strong> will move you back to the previous folder. Think of it as a tree where each directory is a branch and it holds other branches (directories) which you could move to and leaves (files) which you can only look at or manipulate. So, using my analogy, typing <strong>&quot;cd branch_name&quot;</strong> moves you to said branch, and typing <strong>&quot;cd ..&quot;</strong> will cause you to return to the branch your current branch is connected to. This is not entirely accurate (the branches don't have to be linked in order for you to be able to move to them), but this should help you understand how the commandline works.<br />
 The above paragraph may seem slightly confusing, so I will provide a practical example. Suppose you open up your commandline, type in <strong>&quot;dir&quot;</strong>, and see that you have a folder called some_awesome_thing. Not knowing what it contains, you type <strong>&quot;cd some_awesome_thing&quot;</strong> and watch as your path is updated to be &quot;C:\Users\yourUsername\some_awesome_thing&gt;&quot;. Typing in <strong>&quot;dir&quot;</strong> once again shows you that there is a single folder, creatively called thing, inside this directory. Your curiosity still unsatisfied, you type in <strong>&quot;cd thing&quot;</strong> and once again ping the directory for its contents by typing <strong>&quot;dir&quot;</strong>. This time, you only see a file, called run_me.py. Finally satiated with said knowledge, you type <strong>&quot;cd ..&quot;</strong> twice to return you back to your starting point. Note that you could also have typed <strong>&quot;cd c:\users\yourUsername&quot;</strong>, but I chose to use the first method do to its simplisity.</p>
-<h3><a class="header" href="#wait-do-i-have-to-type-all-these-names" id="wait-do-i-have-to-type-all-these-names">Wait, Do I Have To Type All These Names?</a></h3>
+<h3 id="wait-do-i-have-to-type-all-these-names"><a class="header" href="#wait-do-i-have-to-type-all-these-names">Wait, Do I Have To Type All These Names?</a></h3>
 <p>No, you certainly do not. The commandline has a nice feature where you can type in a part of the desired path and press tab to have it  fill out the rest for you. You can keep pressing tab and cycle through the available suggestions. In the previous example, you could have just typed in <strong>&quot;cd &quot;</strong>, do note the trailing space after cd, and pressed tab to go through all of the available directories rather than use dir to find out what is inside your folders.</p>
-<h3><a class="header" href="#why-the-underscores" id="why-the-underscores">Why the Underscores?</a></h3>
+<h3 id="why-the-underscores"><a class="header" href="#why-the-underscores">Why the Underscores?</a></h3>
 <p>I chose to use underscores (_) to remove the necessity of surrounding your arguments with quotes. The commandline will equally accept some_awesome_thing or some awesome thing, but it will require the latter to be surrounded in quotation marks, I.e, &quot;some awesome thing&quot;</p>
-<h3><a class="header" href="#a-quick-note" id="a-quick-note">A quick note</a></h3>
+<h3 id="a-quick-note"><a class="header" href="#a-quick-note">A quick note</a></h3>
 <p>I have been surrounding the commands dealing with commandline input with quotation marks, but this is not how you will see cmd input being notated on the internet. Typically you will see a dollar sign ($) before the desired command, I.e:</p>
 <pre><code class="language-batch">$dir
 $cd some_awesome_thing
 </code></pre>
 <p>Going forward, this is how I will notate commandline input as well. I feel like this is a given, but if you are copying the example commands, remove the dollar sign in order to make them work.</p>
-<h2><a class="header" href="#back-to-your-regularly-scheduled-conversation-with-the-interpreter" id="back-to-your-regularly-scheduled-conversation-with-the-interpreter">Back to Your Regularly Scheduled Conversation With the Interpreter</a></h2>
+<h2 id="back-to-your-regularly-scheduled-conversation-with-the-interpreter"><a class="header" href="#back-to-your-regularly-scheduled-conversation-with-the-interpreter">Back to Your Regularly Scheduled Conversation With the Interpreter</a></h2>
 <p>After getting familiar with the commandline, we can now continue to discuss how to run code outside of special editors. As I have previously mentioned, Python interpreter can help out with quick testing, so that is what we will begin with. Open up your commandline and type in the following:</p>
 <pre><code class="language-batch">$python
 </code></pre>
@@ -205,7 +185,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 &gt;&gt;&gt;
 </code></pre>
 <p>If you get text like 'python' is not recognized as an internal or external command, operable program or batch file, refer to the previous chapter for some pointers regarding adjustment of your environment variables.</p>
-<h3><a class="header" href="#printing-text" id="printing-text">Printing Text</a></h3>
+<h3 id="printing-text"><a class="header" href="#printing-text">Printing Text</a></h3>
 <p>Before we shut down the interpretor, let's say you wanted to verify that the print function works as expected. Type in the following into your console (Don't leave anything out, parentheses and quotes are important!).</p>
 <pre><code class="language-python">print(&quot;Hello, World!&quot;)
 </code></pre>
@@ -217,7 +197,7 @@ Regardless of the outcome, to close the interpreter, you can simply type</p>
 <pre><code class="language-python">quit()
 </code></pre>
 <p>and you will be returned to the comforts of the command prompt.</p>
-<h3><a class="header" href="#running-larger-code-chunks" id="running-larger-code-chunks">Running Larger Code Chunks</a></h3>
+<h3 id="running-larger-code-chunks"><a class="header" href="#running-larger-code-chunks">Running Larger Code Chunks</a></h3>
 <p>The interactive console is great for quick tests, but it ddoes not  work too well for larger projects. Fortunately, Python provides an easy way to run large scripts from the commandline. Start by opening your command prompt and navigating to the desired directory where you wish for the script to reside in and type in the following:</p>
 <pre><code class="language-batch">$echo.&gt;your_script_name.py
 </code></pre>
@@ -228,31 +208,31 @@ Regardless of the outcome, to close the interpreter, you can simply type</p>
 <pre><code class="language-batch">$python your_script_name.py
 </code></pre>
 <p>You should get the output of &quot;Hello, Commandline!&quot;. If you are greeted with silence and are using NVDA, make sure you turned on the reporting of dynamic content changes by hitting NVDA+5. If that still does not work, read on to see how to review your screen</p>
-<h3><a class="header" href="#reviewing-the-screen" id="reviewing-the-screen">Reviewing the Screen</a></h3>
+<h3 id="reviewing-the-screen"><a class="header" href="#reviewing-the-screen">Reviewing the Screen</a></h3>
 <p>At times, your script may exit silently without giving you any output to work with. This is do to your speech being interrupted as your focus switches back to the commandline. To that end, here is the solution to seeing silent errors</p>
-<h4><a class="header" href="#using-nvda" id="using-nvda">Using NVDA</a></h4>
+<h4 id="using-nvda"><a class="header" href="#using-nvda">Using NVDA</a></h4>
 <ul>
 <li>If you are using the laptop layout, use NVDA+PageUp and NVDA+PageDown until you hear &quot;Object review&quot;. After object review has been selected, use NVDA+Up and NVDA+Down arrow keys to review the command prompt screen. Your cursor typically starts at the bottom and thus you may need to scroll upwards to see the error and the traceback.</li>
 <li>If you are using the desktop layout, use NVDA+Numpad7 and NVDA+Numpad1 until you hear &quot;Object review&quot;. After object review has been selected, use Numpad7 and Numpad9 to review the command prompt screen. Your cursor typically starts at the bottom and thus you may need to scroll upwards to see the error and the traceback.</li>
 </ul>
-<h4><a class="header" href="#using-jaws" id="using-jaws">Using Jaws</a></h4>
+<h4 id="using-jaws"><a class="header" href="#using-jaws">Using Jaws</a></h4>
 <p>You can use the standard Jaws cursor (JAWS+RightBracket) to review the last couple of messages. (Thanks <a href="https://forum.audiogames.net/user/16064/">Defender</a> for supplying this tip)</p>
-<h2><a class="header" href="#miscellaneous-settings" id="miscellaneous-settings">Miscellaneous Settings</a></h2>
-<h3><a class="header" href="#indentation" id="indentation">Indentation</a></h3>
+<h2 id="miscellaneous-settings"><a class="header" href="#miscellaneous-settings">Miscellaneous Settings</a></h2>
+<h3 id="indentation"><a class="header" href="#indentation">Indentation</a></h3>
 <p>It is very common to see complaints about the necessity to keep track of tabs and spaces. Fortunately, both  NVDA and Jaws screen readers provide a solution to this issue.</p>
-<h4><a class="header" href="#using-nvda-1" id="using-nvda-1">Using NVDA</a></h4>
+<h4 id="using-nvda-1"><a class="header" href="#using-nvda-1">Using NVDA</a></h4>
 <p>To turn on indentation reporting, go into your NVDA preferences, click on settings, scroll down to document formatting, and press Alt+I. This will bring you to a combo box where you can choose how NVDA notifies you of indention (speech, tones, or both). After selecting your desired method, scroll down and press apply before clicking okay to close the settings dialog. </p>
-<h4><a class="header" href="#using-jaws-thanks-a-hrefhttpsforumaudiogamesnetuser16064defendera-for-supplying-this-tip" id="using-jaws-thanks-a-hrefhttpsforumaudiogamesnetuser16064defendera-for-supplying-this-tip">Using Jaws (Thanks <a href="https://forum.audiogames.net/user/16064/">Defender</a> for supplying this tip)</a></h4>
-<h5><a class="header" href="#method-1" id="method-1">Method 1</a></h5>
+<h4 id="using-jaws-thanks-a-hrefhttpsforumaudiogamesnetuser16064defendera-for-supplying-this-tip"><a class="header" href="#using-jaws-thanks-a-hrefhttpsforumaudiogamesnetuser16064defendera-for-supplying-this-tip">Using Jaws (Thanks <a href="https://forum.audiogames.net/user/16064/">Defender</a> for supplying this tip)</a></h4>
+<h5 id="method-1"><a class="header" href="#method-1">Method 1</a></h5>
 <ul>
 <li>Go to JAWS settings center (JAWS Key plus 6) and either set it for the current application only or use control shift D to make it system wide.</li>
 <li>Hit shift tab and Type <strong>&quot;indent&quot;</strong> into the search box.  The only option which comes up is the one you want.
 You may also want to go into the settings center search box and type &quot;speech and sound&quot; for the speech and sounds category.  There you can change the default scheme by pressing space until it matches the number of spaces that your code editor considers to be a tab if it doesn't seem to be reporting properly.</li>
 </ul>
-<h5><a class="header" href="#method-2" id="method-2">Method 2</a></h5>
+<h5 id="method-2"><a class="header" href="#method-2">Method 2</a></h5>
 <p>When within the window of your editor, use JAWS Key plus V, shift tab and type &quot;indent&quot; again, then set the option to indicate.
 You may also want to go into the settings center search box and type &quot;speech and sound&quot; for the speech and sounds category.  There you can change the default scheme by pressing space until it matches the number of spaces that your code editor considers to be a tab if it doesn't seem to be reporting properly.</p>
-<h3><a class="header" href="#testing-indentation" id="testing-indentation">Testing Indentation</a></h3>
+<h3 id="testing-indentation"><a class="header" href="#testing-indentation">Testing Indentation</a></h3>
 <p>To verify that indentation reports work, read through the following piece of Python code.</p>
 <pre><code class="language-python">def main():
     print(&quot;I will now count to 10!&quot;)
@@ -262,7 +242,7 @@ You may also want to go into the settings center search box and type &quot;speec
 
 main()
 </code></pre>
-<h3><a class="header" href="#symbol-reports" id="symbol-reports">Symbol reports</a></h3>
+<h3 id="symbol-reports"><a class="header" href="#symbol-reports">Symbol reports</a></h3>
 <p>It is common to need to find a mistake in regarding unmatched parentheses within Python code. NVDA and Jaws provide a variety of symbol reporting options to assist in this endeavor. For NVDA, you can toggle through said choices with NVDA+P. For Jaws, you need to navigate to the settings center and search for customize punctuation (Thanks <a href="https://forum.audiogames.net/user/16064/">Defender</a> for supplying this tip). I personally find the most option to be the most helpful (I think that reading out commas and periods is unnecessary), but you may differ in that regard. To that end, the code below can be used as a testing method for the various settings</p>
 <pre><code class="language-python">def print_3d_list():
     matrix = [[[k for k in range(10)] for j in range(10)] for i in range(10)]
@@ -274,50 +254,41 @@ main()
 
 print_3d_list()
 </code></pre>
-<h2><a class="header" href="#thats-it" id="thats-it">That's It!</a></h2>
+<h2 id="thats-it"><a class="header" href="#thats-it">That's It!</a></h2>
 <p>Now that you have an editor and know how to use Python from the commandline, you can proceed to the next section where I have compiled a list of tutorials for you to get started programming. I certainly don't recommend going through all of them at once, better to stick to one method of learning unless you get stuck, but if something does not make sense, feel free to try something else or switch to something new. Just because you chose a specific book or course does not mean that you have to be purely devoted to its methods of teaching. If an explanation seems confusing, chances are that there is a better one out there and you just need to look for it</p>
-<h2><a class="header" href="#attribution" id="attribution">Attribution</a></h2>
+<h2 id="attribution"><a class="header" href="#attribution">Attribution</a></h2>
 <p>This section would not be complete without input from the community. In particular, <a href="https://forum.audiogames.net/user/16064/">Defender</a> provided instructions regarding Jaws commands for indentation, symbol reporting, and reviewing commandline output. If the instructions here are unclear, his original replies are located in <a href="https://forum.audiogames.net/topic/38468/updating-my-python-guides/">this</a> thread, posts 3 and 5.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
-                            <a rel="prev" href="downloading.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="downloading.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-
-                        
-                            <a rel="next" href="tutorials.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="tutorials.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
-                    <a rel="prev" href="downloading.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="downloading.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-
-                
-                    <a rel="next" href="tutorials.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="tutorials.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
-            </nav>
+                            </nav>
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
+                <!-- Livereload script (if served using the cli tool) -->
         <script type="text/javascript">
             var socket = new WebSocket("ws://localhost:3000/__livereload");
             socket.onmessage = function (event) {
@@ -332,33 +303,23 @@ print_3d_list()
             }
         </script>
         
-
         
-
         
-
-        
-        <script type="text/javascript">
+                <script type="text/javascript">
             window.playground_copyable = true;
         </script>
         
-
         
-
-        
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
         
-
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
-
         
-
     </body>
 </html>
